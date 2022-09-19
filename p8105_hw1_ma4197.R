@@ -37,3 +37,17 @@ icecream_df= tibble(
   icecream_factor = factor(c("base", "base", "addin", "newflavor", "addin", "addin",
                               "addin", "newflavor", "addin", "newflavor"))
   )
+icecream_df
+
+library(tidyverse)
+## Mean of Each Variable in DF
+`r mean(pull(icecream_df,icecream))`
+`r mean ((pull(icecream_df,iccream_logical))`
+`r mean ((pull(icecream_df,iccream_char))`
+`r mean ((pull(icecream_df,iccream_factor))`
+
+## Reasoning
+`In this new dataframe, variables that are numeric are able to have a mean value generated
+for them, as obsevred with icecream due to it having a value between 0 and 1. However,
+due to the other variables being character variables with no value assigned to them, a mean
+value cannot be generated.`
