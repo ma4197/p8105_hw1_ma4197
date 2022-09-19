@@ -26,4 +26,14 @@ ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm, color= species))
 ggsave("penguin_plot.pdf", height = 4, width = 6)
 
 
+# Problem 2
+## Create Data Frame
 
+icecream_df= tibble(
+  icecream= rnorm(10),
+  icecream_logical= icecream > 0,
+  icecream_char = c("vanilla", "chocolate", "strawberry", "mintcc", "cookiescream", "rockyroad", 
+                     "birthdaycake", "coffee", "butterpecan", "saltedcaramel"),
+  icecream_factor = factor(c("base", "base", "addin", "newflavor", "addin", "addin",
+                              "addin", "newflavor", "addin", "newflavor"))
+  )
