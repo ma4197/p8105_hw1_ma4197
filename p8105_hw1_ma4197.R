@@ -67,3 +67,4 @@ vector, the output was the levels from 1 to 3, however similar to the logic vect
 cannot be a mean response of the three levels created, as each of these level values
 are also arbitrarily assigned values. As a result a mean cannot be taken for these variables
 due to the returned values being uninterpretable in the context of the dataframe.`
+
