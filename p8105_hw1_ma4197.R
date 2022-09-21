@@ -1,12 +1,13 @@
 ---
-title: "Homework 1"
-author: "Mayuri Albal"
+title:"Homework 1"
+author:"Mayuri Albal"
 date: 09-18-22
-output: html_document
+output:github_document
 ---
 #Problem 1
 ## Data Loading
 data("penguins", package = "palmerpenguins")
+
 
 ## Observations
 nrow(penguins)
