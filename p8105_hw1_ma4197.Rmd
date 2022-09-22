@@ -7,12 +7,13 @@ output: github_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
 ```
 
 ```{r}
 
 ```
-## Problem 1
+# Problem 1
 
 ```{r}
 data("penguins", package = "palmerpenguins")
@@ -31,4 +32,13 @@ In this data set, there are 8 variables  and 344 observations for penguins.
 The variables include:species, island, length of bill (mm), depth of bill (mm),
 flipper length (mm), body mass (g), sex, and year of birth? 
 The mean flipper length of penguins in the data set is 200.92 mm.
+
+## Problem 1- Plots
+
+```{r}
+ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm, color= species))+ geom_point(na.rm = TRUE)
+ggsave("penguin_plot.pdf", height = 4, width = 6)
+```
+
+
 
