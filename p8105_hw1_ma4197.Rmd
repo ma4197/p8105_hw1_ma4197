@@ -4,9 +4,7 @@ author: "Mayuri Albal"
 date: "2022-09-18"
 output: github_document
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r setup, include = FALSE}
 library(tidyverse)
 ```
 # Problem 1
@@ -37,7 +35,7 @@ The mean flipper length of penguins in the data set is 200.92 mm.
 
 ### Plots
 ```{r}
-ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm, color= species))+ geom_point(na.rm = TRUE)
+ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm, color= species))+    geom_point(na.rm = TRUE)
 ggsave("penguin_plot.pdf", height = 4, width = 6)
 ```
 
