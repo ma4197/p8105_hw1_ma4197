@@ -79,5 +79,4 @@ the frame. For the character vector, all responses were NA due to the character 
 thus with no numeric value they cannot have a generated mean. Lastly, for the factor
 vector, the output was the levels from 1 to 3, however similar to the logic vectors, there
 cannot be a mean response of the three levels created, as each of these level values
-are also arbitrarily assigned values. As a result a mean cannot be taken for these variables
-due to the returned values being uninterpretable in the context of the data frame.
+are also arbitrarily assigned values. As a result a mean cannot be taken for these variables due to the returned values being uninterpretable in the context of the data frame.
