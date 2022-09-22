@@ -1,0 +1,34 @@
+---
+title: "Homework 1"
+author: "Mayuri Albal"
+date: "2022-09-18"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+
+```
+## Problem 1
+
+```{r}
+data("penguins", package = "palmerpenguins")
+```
+
+```{r}
+nrow(penguins)
+ncol(penguins)
+```
+
+```{r}
+mean.default(penguins$flipper_length_mm, na.rm = TRUE)
+```
+
+In this data set, there are 8 variables  and 344 observations for penguins. 
+The variables include:species, island, length of bill (mm), depth of bill (mm),
+flipper length (mm), body mass (g), sex, and year of birth? 
+The mean flipper length of penguins in the data set is 200.92 mm.
+
